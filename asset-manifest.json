@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/bingostya/static/css/main.e5b13752.css",
-    "main.js": "/bingostya/static/js/main.9b59551b.js",
+    "main.css": "/bingostya/static/css/main.56737cb4.css",
+    "main.js": "/bingostya/static/js/main.a887648b.js",
     "static/js/453.63f4c4c8.chunk.js": "/bingostya/static/js/453.63f4c4c8.chunk.js",
     "static/media/bootstrap-icons.woff?": "/bingostya/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
     "static/media/bootstrap-icons.woff2?": "/bingostya/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
     "index.html": "/bingostya/index.html",
-    "main.e5b13752.css.map": "/bingostya/static/css/main.e5b13752.css.map",
-    "main.9b59551b.js.map": "/bingostya/static/js/main.9b59551b.js.map",
+    "main.56737cb4.css.map": "/bingostya/static/css/main.56737cb4.css.map",
+    "main.a887648b.js.map": "/bingostya/static/js/main.a887648b.js.map",
     "453.63f4c4c8.chunk.js.map": "/bingostya/static/js/453.63f4c4c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5b13752.css",
-    "static/js/main.9b59551b.js"
+    "static/css/main.56737cb4.css",
+    "static/js/main.a887648b.js"
   ]
 }
