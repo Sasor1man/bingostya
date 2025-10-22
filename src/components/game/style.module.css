@@ -1,19 +1,22 @@
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
 .game {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  min-width: 400px;
-  max-width: 500px;
-  max-height: calc(100vh - 215px);
-  gap: 20px;
-  overflow-y: auto;
+    min-width: 400px;
+    max-width: 500px;
+    max-height: calc(100vh - 215px);
+    gap: 20px;
+    overflow-y: auto;
 }
 
 .bingoButton {
-  width: 100px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

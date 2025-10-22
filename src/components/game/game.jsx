@@ -3,9 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import Spinner from 'react-bootstrap/Spinner';
 
 
-function Game({ items, deleteItem, isDeleting }) {
+function Game({ items, deleteItem, isDeleting, isLoading, error }) {
 
   const [picked, setPicked] = useState([])
 
@@ -39,14 +40,28 @@ function Game({ items, deleteItem, isDeleting }) {
       </Button>
 
 
-
+  if (error) {
+    return (
+      <>
+        <div className={styles.centered}>
+          <h1>Kto prochital tot loh</h1>
+          <p>(smth went wrong, try reload)</p>
+        </div>
+      </>
+    )
+  }
 
   return (
-    <>
-      <div className={`${styles.game} d-flex m-auto justify-content-center align-items-center flex-wrap`} direction='horizontal'>
-        {items?.map((e) => renderButton(e))}
-      </div>
-    </>
+    isLoading ? (
+      <Spinner animation="border" role="status" className={styles.centered}>
+        <span className="visually-hidden">Loading...</span>
+      </Spinner>
+    ) :
+      (<>
+        <div className={`${styles.game} ${styles.centered} d-flex m-auto justify-content-center align-items-center flex-wrap`} direction='horizontal'>
+          {items?.map((e) => renderButton(e))}
+        </div>
+      </>)
   );
 }
 

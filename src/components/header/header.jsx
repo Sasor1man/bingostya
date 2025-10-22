@@ -4,18 +4,16 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useState } from 'react';
-import { setTitleRequest } from '../../service/requests';
 import styles from './style.module.css';
 
-function Header({ request, setIsDeleting, isDeleting }) {
+function Header({ setIsDeleting, isDeleting, addItem }) {
 
     const [title, setTitle] = useState()
 
     const handleSubmit = (e) => {
         e.preventDefault();
         if (title) {
-            setTitleRequest(title)
-            request()
+            addItem(title)
         }
     };
 
