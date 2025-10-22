@@ -1,41 +1,34 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Stack, Button } from 'react-bootstrap';
-
-const mock = [
-  {
-    title: 'aaa',
-    id: 1
-  },
-  {
-    title: 'dfgvhb kjl kmnjhbv gfcbdc gnhvbjnk',
-    id: 2
-  },
-  {
-    title: 'lol text',
-    id: 3
-  },
-  {
-    title: 'zerkalo',
-    id: 4
-  },
-  {
-    title: 'tak v biblii napisano',
-    id: 5
-  },
-  {
-    title: 'vy menya ne slishite',
-    id: 6
-  }
-]
-
+import Game from './components/game/game';
+import Header from './components/header/header';
+import { useState, useEffect } from 'react';
+import { deleteTitle, getTitles } from './service/requests';
 
 function App() {
+  const [items, setItems] = useState([])
+  const [isDeleting, setIsDeleting] = useState(false)
+
+  const getItems = async() => {
+    const result = await getTitles()
+    setItems(result)
+  }
+
+  const deleteItem = async(id) => {
+
+    setItems(prev => prev.filter(e => e.id !== id))
+
+    await deleteTitle(id)
+  }
+
+  useEffect(() => {
+    getItems()
+  }, [])
+
   return (
     <>
-      <Stack gap={2} className='m-auto game justify-content-center flex-wrap' direction='horizontal'>
-        {mock.map((e) => <Button key={e.id} className='bingoButton'>{e.title}</Button>)}
-      </Stack>
+    <Header request={getItems} setIsDeleting={setIsDeleting} isDeleting={isDeleting} />
+     <Game items={items} isDeleting={isDeleting} deleteItem={deleteItem}/>
     </>
   );
 }

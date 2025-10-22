@@ -1,0 +1,12 @@
+.trashButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 40px;
+}
+
+.trashButton > i {
+    height: 19px;
+    width: 16px;
+}
