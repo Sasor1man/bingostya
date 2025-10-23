@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/bingostya/static/css/main.84fb4b12.css",
+    "main.css": "/bingostya/static/css/main.3885738a.css",
     "main.js": "/bingostya/static/js/main.061298b2.js",
     "static/js/453.63f4c4c8.chunk.js": "/bingostya/static/js/453.63f4c4c8.chunk.js",
     "static/media/bootstrap-icons.woff?": "/bingostya/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
     "static/media/bootstrap-icons.woff2?": "/bingostya/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
     "index.html": "/bingostya/index.html",
-    "main.84fb4b12.css.map": "/bingostya/static/css/main.84fb4b12.css.map",
+    "main.3885738a.css.map": "/bingostya/static/css/main.3885738a.css.map",
     "main.061298b2.js.map": "/bingostya/static/js/main.061298b2.js.map",
     "453.63f4c4c8.chunk.js.map": "/bingostya/static/js/453.63f4c4c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84fb4b12.css",
+    "static/css/main.3885738a.css",
     "static/js/main.061298b2.js"
   ]
 }
