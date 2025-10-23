@@ -6,7 +6,6 @@
 }
 
 .game {
-    min-width: 400px;
     max-width: 500px;
     max-height: calc(100vh - 215px);
     gap: 20px;
@@ -19,4 +18,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 400px) {
+    .game {
+        width: 100%;
+        padding-top: 10px;
+        max-height: calc(100vh - 265px);
+    }
 }

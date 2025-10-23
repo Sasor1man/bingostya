@@ -6,7 +6,24 @@
     height: 40px;
 }
 
-.trashButton > i {
+.trashButton>i {
     height: 19px;
     width: 16px;
+}
+
+.addInput {
+    display: flex;
+    justify-content: space-between;
+    width: 330px;
+}
+
+@media (max-width: 400px) {
+    .headerForm :global(.row){
+        gap: 10px;
+        padding: 0 10px 0 10px;
+    }
+
+    .addInput {
+        width: 100%;
+    }
 }
