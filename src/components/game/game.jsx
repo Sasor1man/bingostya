@@ -57,11 +57,11 @@ function Game({ items, deleteItem, isDeleting, isLoading, error }) {
         <span className="visually-hidden">Loading...</span>
       </Spinner>
     ) :
-      (<>
-        <div className={`${styles.game} ${styles.centered} d-flex m-auto justify-content-center align-items-center flex-wrap`} direction='horizontal'>
+      (<div className={`${styles.main} d-flex m-auto justify-content-center align-items-center`}>
+        <div className={`${styles.game} d-flex m-auto justify-content-center align-items-center flex-wrap`} direction='horizontal'>
           {items?.map((e) => renderButton(e))}
         </div>
-      </>)
+      </div>)
   );
 }
 

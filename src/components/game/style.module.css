@@ -5,11 +5,16 @@
     translate: -50% -50%;
 }
 
+.main {
+
+    height: calc(100vh - 56px);
+}
+
 .game {
     max-width: 500px;
-    max-height: calc(100vh - 215px);
     gap: 20px;
     overflow-y: auto;
+    padding-top: 30px;
 }
 
 .bingoButton {
@@ -24,6 +29,6 @@
     .game {
         width: 100%;
         padding-top: 10px;
-        max-height: calc(100vh - 265px);
+        /* max-height: calc(100vh - 265px); */
     }
 }
