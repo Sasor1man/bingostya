@@ -20,28 +20,28 @@ function Header({ setIsDeleting, isDeleting, addItem }) {
     return (
         <Navbar className="bg-body-tertiary justify-content-around">
             <Form inline onSubmit={handleSubmit} className={styles.headerForm}>
-                <Row>
-                    <Col xs='auto'>
+                <div className={styles.bars}>
+                    <div >
                         <Button
                             className={styles.trashButton}
                             onClick={() => isDeleting ? setIsDeleting(false) : setIsDeleting(true)}
                             variant={isDeleting ? 'danger' : 'primary'}
                         ><i className="bi bi-trash"></i></Button>
-                    </Col>
+                    </div>
                     <div className={styles.addInput}>
-                        <Col xs="auto">
+                        <div >
                             <Form.Control
                                 type="text"
                                 placeholder="add item"
                                 className=" mr-sm-2"
                                 onChange={(e) => setTitle(e.target.value)}
                             />
-                        </Col>
-                        <Col xs="auto">
+                        </div>
+                        <div>
                             <Button type="submit" onClick={handleSubmit}>Add</Button>
-                        </Col>
+                        </div>
                     </div>
-                </Row>
+                </div>
             </Form>
         </Navbar>);
 }

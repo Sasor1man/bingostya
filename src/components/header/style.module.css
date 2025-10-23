@@ -11,21 +11,19 @@
     width: 16px;
 }
 
+.bars {
+    display: flex;
+    gap: 50px;
+}
+
 .addInput {
     display: flex;
-    justify-content: space-between;
-    width: 330px;
+    gap: 10px;
 }
 
 @media (max-width: 400px) {
-    .headerForm :global(.row){
-        gap: 10px;
+    .bars {
         padding: 0 10px 0 10px;
-    }
-
-    .addInput {
-        width: 100%;
-        justify-content: start;
-        gap: 10px;
+        gap: 20px;
     }
 }
